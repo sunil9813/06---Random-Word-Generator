@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react"
+import "./App.css"
+import Word from "./components/Word"
 
 function App() {
+  //const [data, setData] = useState("")
+
+  //const wordFecth = async () => {
+  //  const response = await fetch("https://random-word-api.herokuapp.com/all")
+  //  const data = await response.json()
+  //  setData(data)
+  //  console.log(data[2])
+  //}
+  //useEffect(() => {
+  //  wordFecth()
+  //}, [])
+
+  //const randomGenerator = () => {
+  //  //let word = Math.random() * data.length
+  //  let word = Math.floor(Math.random() * data.length)
+  //  setData(word)
+  //  console.log(word)
+  //}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/*<Word randomGenerator={randomGenerator} word={setData} />*/}
+      <Word />
+    </>
+  )
 }
 
-export default App;
+export default App
